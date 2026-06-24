@@ -2,22 +2,63 @@
 <html lang="de">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
-  <title>Weiterleitung – Ergebnispräsentation Westerheim</title>
-  <!-- ZIEL: hier bei Bedarf umbiegen (z. B. auf eine selbst gehostete PDF) -->
-  <link rel="canonical" href="https://westerheim.ris-portal.de/web/guest/sitzungen?sitzungId=210643">
-  <meta http-equiv="refresh" content="0; url=https://westerheim.ris-portal.de/web/guest/sitzungen?sitzungId=210643">
+  <title>Ergebnispräsentation – Gemeinde Westerheim</title>
   <style>
-    body{font-family:Georgia,'Times New Roman',serif;max-width:38rem;margin:18vh auto;padding:0 1.5rem;color:#222;line-height:1.55}
-    a{color:#1a4f8a}
-    .muted{color:#666;font-size:.9rem;margin-top:2rem}
+    :root{ --ink:#1f2937; --muted:#6b7280; --line:#e5e7eb; --accent:#1a4f8a; }
+    *{box-sizing:border-box}
+    body{
+      font-family:Georgia,'Times New Roman',serif; color:var(--ink);
+      background:#fbfbfa; line-height:1.6; margin:0;
+      display:flex; min-height:100vh; align-items:center; justify-content:center;
+      padding:2rem 1.25rem;
+    }
+    .card{ max-width:40rem; width:100%; }
+    .eyebrow{
+      font-family:Arial,Helvetica,sans-serif; font-size:.72rem; letter-spacing:.14em;
+      text-transform:uppercase; color:var(--muted); margin:0 0 1.4rem;
+    }
+    h1{ font-size:1.7rem; line-height:1.25; margin:0 0 .4rem; font-weight:normal; }
+    .sub{ font-size:1.05rem; color:var(--muted); margin:0 0 1.6rem; }
+    hr{ border:0; border-top:1px solid var(--line); margin:1.6rem 0; }
+    p.context{ font-size:1rem; margin:0 0 2rem; }
+    .ref{ color:var(--ink); }
+    .btn{
+      display:inline-block; font-family:Arial,Helvetica,sans-serif; font-size:.95rem;
+      text-decoration:none; color:#fff; background:var(--accent);
+      padding:.8rem 1.4rem; border-radius:6px;
+    }
+    .btn:hover{ background:#163f6e; }
+    .note{ font-size:.85rem; color:var(--muted); margin:.9rem 0 0; }
+    footer{
+      font-family:Arial,Helvetica,sans-serif; font-size:.78rem; color:var(--muted);
+      margin-top:3rem; padding-top:1rem; border-top:1px solid var(--line);
+    }
   </style>
 </head>
 <body>
-  <p>Sie werden weitergeleitet zur Ergebnispräsentation der Organisationsuntersuchung,
-     vorgestellt in der öffentlichen Sitzung des Gemeinderats Westerheim am 23. Juni 2026 (BU 51/2026).</p>
-  <p>Falls die Weiterleitung nicht automatisch erfolgt:
-     <a href="https://westerheim.ris-portal.de/web/guest/sitzungen?sitzungId=210643">hier klicken</a>.</p>
-  <p class="muted">Quellenverweis · Dr. Malcher Unternehmensberatung GmbH</p>
+  <main class="card">
+    <p class="eyebrow">Dr. Malcher Unternehmensberatung GmbH</p>
+
+    <h1>Ergebnispräsentation der Organisationsuntersuchung</h1>
+    <p class="sub">Gemeinde Westerheim · Finanzservice über den GVV Laichinger Alb</p>
+
+    <hr>
+
+    <p class="context">
+      Die nachfolgende Präsentation wurde in der <span class="ref">öffentlichen Sitzung des
+      Gemeinderats Westerheim am 23. Juni 2026</span> vorgestellt
+      (Beratungsunterlage BU&nbsp;51/2026). Sie fasst die Ergebnisse der Fortschreibung
+      der Organisationsuntersuchung von 2021 zusammen.
+    </p>
+
+    <a class="btn" href="praesentation.pdf">Weiter zur Ergebnispräsentation (PDF)</a>
+    <p class="note">Öffnet die Präsentation als PDF-Dokument.</p>
+
+    <footer>
+      Quellenverweis · bereitgestellt von der Dr. Malcher Unternehmensberatung GmbH
+    </footer>
+  </main>
 </body>
 </html>
